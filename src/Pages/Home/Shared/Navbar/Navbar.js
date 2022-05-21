@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const anchors = <>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/appointment">Apointment</Link></li>
+        <li><Link to="/appointment">Appointment</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/reviews">Reviews</Link></li>
         <li><Link to="/contactus">Contact Us</Link></li>

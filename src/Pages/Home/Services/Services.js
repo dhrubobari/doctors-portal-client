@@ -43,7 +43,7 @@ const Services = () => {
             </div>
             <div className="hero min-h-screen px-6">
             <div className="hero-content flex-col lg:flex-row">
-            <img src={treatment} className="max-w-sm rounded-lg shadow-2xl" />
+            <img src={treatment} className="max-w-sm rounded-lg shadow-2xl" alt=""/>
             <div className="ml-10">
         <h1 className="text-5xl font-bold">Exceptional Dental Care, on Your Terms.</h1>
             <p className="py-6 text-center">

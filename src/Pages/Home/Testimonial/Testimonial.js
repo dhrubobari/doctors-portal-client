@@ -9,19 +9,19 @@ const Testimonial = () => {
 
     const reviews = [
         {
-            id: 1,
+            _id: 1,
             name: "William Harry",
             comment: "The services that I receive from (DN) is excellent. Wonderful experience with (Doctors Portal).",
             img: visitor1
         },
         {
-            id: 2,
+            _id: 2,
             name: "Fiona Yun",
             comment: "The services that I receive from (DN) is excellent. Wonderful experience with (Doctors Portal).",
             img: visitor2
         },
         {
-            id: 3,
+            _id: 3,
             name: "Maria Santos",
             comment: "The services that I receive from (DN) is excellent. Wonderful experience with (Doctors Portal).",
             img: visitor3
@@ -43,7 +43,7 @@ const Testimonial = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
                     reviews.map(review => <Review
-                    key={review.id}
+                    key={review._id}
                     review={review}
                     ></Review>)
                 }
