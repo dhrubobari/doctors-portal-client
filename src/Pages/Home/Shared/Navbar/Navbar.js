@@ -18,6 +18,9 @@ const Navbar = () => {
         <li><Link to="/about">About</Link></li>
         <li><Link to="/reviews">Reviews</Link></li>
         <li><Link to="/contactus">Contact Us</Link></li>
+        {
+          user && <li><Link to="/dashboard">Dashboard</Link></li>
+        }
         <li>{user ? <button onClick={logout} className="btn btn-ghost">sign out</button> : <Link to="/login">Login</Link>}</li>
     </>;
   return (
@@ -37,6 +40,9 @@ const Navbar = () => {
     <ul className="menu menu-horizontal p-0">
         {anchors}
     </ul>
+  </div>
+  <div className="navbar-end">
+  <label for="my-drawer-2" class="btn btn-ghost drawer-button lg:hidden">Open drawer</label>
   </div>
 </div>
   );

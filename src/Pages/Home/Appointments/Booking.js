@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Booking = ({ booking, setTreatment }) => {
-    const {name, slots} = booking;
+    const {name, slots, price} = booking;
 
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -13,6 +13,7 @@ const Booking = ({ booking, setTreatment }) => {
                 :<span className='text-red-500'>Try another day</span>
             }</p>
           <p className="">{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
+          <p><small>Price: ${price}</small></p>
           <div className="card-actions justify-center">
             <label
             htmlFor="booking-modal" // booking-modal id from BookingModal.js to open
